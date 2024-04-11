@@ -1,5 +1,6 @@
 package com.example.rockpaperscissor;
 
+import android.content.Intent;
 import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.os.Handler;
@@ -25,6 +26,8 @@ public class MainActivity extends AppCompatActivity {
     private Button btnReset;
     private TextView tvScore;
 
+    private Button btnHome;
+
     private int playerScore = 0;
     private int computerScore = 0;
 
@@ -43,6 +46,12 @@ public class MainActivity extends AppCompatActivity {
         btnScissors = findViewById(R.id.btnScissors);
         btnReset = findViewById(R.id.btnReset);
         tvScore = findViewById(R.id.tvScore);
+        btnHome = findViewById(R.id.btnHome);
+
+        btnHome.setOnClickListener(view -> {
+            Intent intent = new Intent(this, MainMenu.class);
+            startActivity(intent);
+        });
 
         btnRock.setOnClickListener(new View.OnClickListener() {
             @Override

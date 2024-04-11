@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d7e598"
+    tools:context=".Rules">
+
+    <TextView
+        android:id="@+id/instructions_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginTop="24dp"
+        android:paddingHorizontal="32dp"
+        android:text="Welcome to Rock Paper Scissors!\n\nInstructions:\n\n- Select your choice: Rock, Paper, or Scissors.\n\n- After you choose, the computer will randomly select.\n\n- The winner is determined based on the classic rules:\n  Rock beats Scissors, Scissors beats Paper, Paper beats Rock.\n\n- Play until one player reaches 5 points.\n\n- Good luck and have fun!"
+        android:textColor="#160706"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:background="#cf4e3f"
+        android:text="Play"
+        android:textColor="#fbf0ef"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/instructions_text" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -164,6 +164,17 @@
                 android:textColor="#160706" />
 
             <!-- Score Label -->
+
+            <Button
+                android:id="@+id/btnHome"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:background="#cf4e3f"
+                android:text="Back to Main Menu"
+                android:textColor="#160706" />
+
             <TextView
                 android:id="@+id/tvScore"
                 android:layout_width="wrap_content"
