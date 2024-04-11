@@ -1,9 +1,24 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.RockPaperScissor" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    <style name="Base.Theme.RockPaperScissor" parent="Theme.AppCompat.DayNight.NoActionBar">
+
     </style>
 
+
     <style name="Theme.RockPaperScissor" parent="Base.Theme.RockPaperScissor" />
+
+    <style name="namebutton1" parent="Widget.MaterialComponents.Button">
+
+    </style>
+
+    <drawable name="custom_button_background" >
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="rectangle">
+            <corners android:radius="8dp" />
+            <gradient
+                android:startColor="#fcba03"
+                android:endColor="#ff6100"
+                android:angle="270" />
+        </shape>
+    </drawable>
 </resources>

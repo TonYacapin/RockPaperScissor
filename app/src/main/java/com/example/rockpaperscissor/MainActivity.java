@@ -147,7 +147,7 @@ public class MainActivity extends AppCompatActivity {
                     endGame();
                     return;
                 } else if (computerScore == 5) {
-                    tvScore.setText("Congratulations! Computer Wins!");
+                    tvScore.setText("You Lose! Computer Wins!");
                     endGame();
                     return;
                 }
@@ -221,5 +221,11 @@ public class MainActivity extends AppCompatActivity {
         tvScore.setText("Player: " + playerScore + "  Computer: " + computerScore);
         imagePlayer.setImageResource(R.drawable.hand_draw);
         imageComputer.setImageResource(R.drawable.hand_draw);
+
+
+        btnPaper.setEnabled(true);
+        btnRock.setEnabled(true);
+        btnScissors.setEnabled(true);
+        btnReset.setEnabled(true);
     }
 }
